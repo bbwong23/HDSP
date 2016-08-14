@@ -1,0 +1,61 @@
+<style>
+    html {
+        overflow-y: scroll;
+    }
+    
+    body {
+        padding-top: 50px;
+    }
+    
+    #todo-list {
+        margin-bottom: 30px;
+    }
+    
+    .usersTestPage {
+        background: white;
+        border: solid 2px #002642;
+        position absolute;
+        z-index: 1000 !important;
+    }
+    
+    .submitCancelOk {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    
+    #add-user-dialog {
+        display: none;
+    }
+    
+    #delete-user-dialog {
+        display: none;
+    }
+    
+    #edit-user-dialog {
+        display: none;
+    }
+</style>
+
+<p>{{ tagline }}</p>
+<div class="usersTestPage">
+    <button id="createNewUser" ng-click="createUser()" type="button">Add a user to the DB</button>
+    <div id="add-user-dialog">Please enter the following information for a new user
+        <p></p>
+        <input type="text" placeholder="Your first name" value="" id="firstName" />
+        <input type="text" placeholder="Your last name" value="" id="lastName" />
+        <input type="text" placeholder="Your studentId" value="" id="studentId" />
+        <input type="text" placeholder="Your email" value="" id="email" />
+        <input type="text" placeholder="Your new password" value="" id="password" />
+    </div>
+    <div id="delete-user-dialog">Are you sure you want to delete this dashboard?</div>
+    <div id="edit-user-dialog">Please edit the users information
+        <input type="text" placeholder="Your first name" id="newFirstName" />
+        <input type="text" placeholder="Your last name" id="newLastName" />
+        <input type="text" placeholder="Your email" id="newEmail" />
+        <input type="text" placeholder="Your studentId" id="newStudentId" />
+    </div>
+    <button id="getAllUsers" ng-click="getUser()" type="button">Get all users test</button>
+    <div id="showUsers">
+        <p>{{users}}</p>
+    </div>
+</div>

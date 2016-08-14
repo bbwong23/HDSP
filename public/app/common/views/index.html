@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <base href="/">
+
+    <title>Starter Node and Angular</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="css/style.css">  custom styles -->
+
+    <!-- JS -->
+    <script src="/assets/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/assets/bower_components/jquery-ui/jquery-ui.js"></script>
+    <script src="/assets/bower_components/angular/angular.js"></script>
+    <script src="/assets/bower_components/angular-route/angular-route.js"></script>
+    <script src="/assets/bower_components/angular-resource/angular-resource.js"></script>
+
+    <!--<script src="/app/common/views/main/mainCtrl.js" type="text/javascript"></script>
+    <script src="/app/common/views/users/usersCtrl.js" type="text/javascript"></script>
+    <script src="/app/common/services/usersService.js" type="text/javascript"></script>
+    <script src="/app/common/appRoutes.js" type="text/javascript"></script>
+    <script src="/app/app.js" type="text/javascript"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>-->
+    <script src="/dist/js/app.min.js"></script>
+</head>
+<body ng-app="sampleApp">
+<div class="container">
+
+    <!-- HEADER -->
+    <nav class="navbar navbar-inverse">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">Stencil: Node and Angular</a>
+        </div>
+
+        <!-- LINK TO OUR PAGES. ANGULAR HANDLES THE ROUTING HERE -->
+        <ul class="nav navbar-nav">
+            <li><a href="/users">Users</a></li>
+        </ul>
+    </nav>
+
+    <!-- ANGULAR DYNAMIC CONTENT -->
+    <div ng-view></div>
+
+</div>
+</body>
+</html>

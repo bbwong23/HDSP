@@ -1,0 +1,5 @@
+node_modules/
+public/assets/bower_components/
+public/dist/css/style.css
+public/dist/css/style.min.css
+public/dist/js/app.min.js

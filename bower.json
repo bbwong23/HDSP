@@ -1,0 +1,23 @@
+{
+  "name": "umdcalanderapp",
+  "version": "1.0.0",
+  "author": "Benjamin Jones",
+  "dependencies": {
+    "angular": "latest",
+    "jquery": "latest",
+    "ngstorage": "latest",
+    "foundation": "latest",
+    "angular-foundation": "latest",
+    "moment": "latest",
+    "angular-ui-grid": "latest",
+    "bootstrap": "latest",
+    "font-awesome": "latest",
+    "animate.css": "latest",
+    "angular-route": "latest",
+    "angular-resource": "latest",
+    "jquery-ui": "latest"
+  },
+  "resolutions": {
+    "angular": "1.5.8"
+  }
+}

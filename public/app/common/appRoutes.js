@@ -2,6 +2,18 @@
 
     $routeProvider
 
+        // login page
+        .when('/login', {
+            templateUrl: '/app/common/views/login/login.html',
+            controller: 'LoginController'
+        })
+
+        // account registration page
+        .when('/signup', {
+            templateUrl: '/app/common/views/login/registration.html',
+            controller: 'LoginController'
+        })
+
         // home page
         .when('/', {
             templateUrl: '/app/common/views/main/home.html',

@@ -1,0 +1,19 @@
+ <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="loginStyle.css">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-md-4 col-md-offset-4">
+      <h1 class="login-title">Sign in to UMD Help Desk Scheduler
+        <div class="account-wall">
+        	<img src="https://it.umd.edu/sites/it.umd.edu/themes/umd_dit_main/images/dit-logo.png" class="profile-img"/>
+            <form action="/login" method="POST" class="form-signin">
+	            <input type="text" name="username" placeholder="Directory ID" required="required" autofocus="autofocus" class="form-control"/>
+	            <input type="password" name="password" placeholder="Password" required="required" class="form-control"/>
+	            <button type="submit" class="btn btn-lg btn-primary btn-block">Sign in</button><span class="clearfix"></span>
+          </form>
+        </div><a href="/signup" class="text-center new-account">Create an account</a>
+      </h1>
+    </div>
+  </div>
+</div>

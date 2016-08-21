@@ -2,7 +2,7 @@
 var mongoose = require('mongoose');
 
 module.exports = mongoose.model('User',{
-	id: String,
+	directoryId: String,
 	username: String,
 	password: String,
 	email: String,

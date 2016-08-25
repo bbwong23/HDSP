@@ -12,8 +12,13 @@
         .when('/users', {
             templateUrl: '/app/common/views/users/users.html',
             controller: 'UsersController'
-        });
+        })
 
+        // NEW ROUTE
+        .when('/userprofile', {
+            templateUrl: '/app/common/views/userprofile/profilepage.html',
+            controller: 'UserProfileController'
+        });
     $locationProvider.html5Mode(true);
 
 }]);

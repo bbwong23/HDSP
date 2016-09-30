@@ -5,13 +5,13 @@
         // login page
         .when('/login', {
             templateUrl: '/app/common/views/login/login.html',
-            controller: 'LoginController'
+            controller: 'login'
         })
 
         // account registration page
         .when('/signup', {
             templateUrl: '/app/common/views/login/registration.html',
-            controller: 'LoginController'
+            controller: 'signup'
         })
 
         // home page

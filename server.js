@@ -24,7 +24,7 @@ app.use(express.static(__dirname + '/public'));
 
 // routes ==================================================
 require('./routes/users_routes')(app); // configure our routes
-
+//require('./routes/shifts_routes')(app);
 // start app ===============================================
 // startup our app at http://localhost:8080
 app.listen(port);               
